@@ -78,7 +78,7 @@ try:
     def loop():
 
         # Initialize the ePaper display
-        epd.init()
+        epd.init(epd.lut_full_update)
         epd.Clear(0xFF)
 
         # (Re-)create our canvas
