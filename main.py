@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding:utf-8 -*-
 
-import epd2in7
+import epd2in13
 import time
 import datetime
 from PIL import Image,ImageDraw,ImageFont
@@ -68,11 +68,11 @@ try:
     interval = REFRESH_MINUTES * 60
 
     # Initialize our ePaper Display
-    epd = epd2in7.EPD()
+    epd = epd2in13.EPD()
     
     # Prepare our canvas
-    width = epd2in7.EPD_HEIGHT
-    height = epd2in7.EPD_WIDTH
+    width = epd2in13.EPD_HEIGHT
+    height = epd2in13.EPD_WIDTH
     
     # Define our main loop function
     def loop():
@@ -107,4 +107,3 @@ try:
 except:
     print('traceback.format_exc():\n%s',traceback.format_exc())
     exit()
-
